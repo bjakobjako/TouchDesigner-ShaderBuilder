@@ -1,3 +1,4 @@
+#undef Cd
 {%
 import textwrap
 def indent(text, amount, ch='\t'):
@@ -45,7 +46,7 @@ void main()
 	geom.N = N;
 	geom.localN = N;
 	geom.uv = uv[0].xy;
-	geom.Cd = TDInstanceColor(Cd);
+	geom.Cd = TDInstanceColor(Color);
 	geom.cameraIndex = TDCameraIndex();
 
 	// custon attributes
